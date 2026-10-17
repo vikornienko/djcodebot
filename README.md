@@ -1,6 +1,6 @@
-# $PROJECT_NAME
+# DJCODEBOT
 
-$PROJECT_DESCRIPTION
+The project for self-learn django framework.
 
 ## Setup
 
