@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-.PHONY: rs mm mig csu sa rc rcf rf rfc rm
+.PHONY: rs mm mig csu sa rc rcf rf rfc rm rpc
 
 rs:
 	uv run djcodebot/manage.py runserver
@@ -31,3 +31,6 @@ rfc:
 
 rm:
 	uv run mypy --config-file mypy.ini
+
+rpc:
+	uv run pre-commit run
