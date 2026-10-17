@@ -6,7 +6,15 @@ $PROJECT_DESCRIPTION
 
 This project uses uv for dependency management.
 
-## Commands
+## Configure the Git repository
+
+git init --initial-branch=main --object-format=sha1
+uv run pre-commit install
+git add .
+git commit -m "Initial commit"
+
+
+## Commands from Makefile
 
 - \`make rs\` - Run development server
 - \`make mm\` - Make migrations
